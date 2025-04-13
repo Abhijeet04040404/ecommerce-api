@@ -20,7 +20,7 @@ Requirements
 
 Installation
 
-->Clone the repository using Git: git clone [https://github.com/your-username/product-management-crud.git](https://github.com/your-username/product-management-crud.git`)
+->Clone the repository using Git: git clone https://github.com/your-username/product-management-crud.git
 
 ->Install dependencies using Composer: composer install
 ->Create a new MySQL database and update the .env file with your database credentials
