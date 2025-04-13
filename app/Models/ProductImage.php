@@ -11,6 +11,12 @@ class ProductImage extends Model
 
     protected $fillable = ['url'];
 
+    /**
+     * Get the parent imageable model (e.g. Product).
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\MorphTo
+     */
+
     public function imageable()
     {
         return $this->morphTo();

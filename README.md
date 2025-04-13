@@ -26,6 +26,7 @@ Installation
 ->Create a new MySQL database and update the .env file with your database credentials
 ->Run the migrations to create the database tables: php artisan migrate
 ->Run the seeder to create the fake data : php artisan migrate:fresh --seed
+->Run the command for storage to create folder to image : php artisan storage:link
 ->Start the application using Laravel's built-in development server: php artisan serve
 
 Usage
@@ -38,7 +39,16 @@ The application provides a RESTful API for managing products. The API endpoints 
 ->PUT|PATCH /products/{id}: Update a product
 ->DELETE /products/{id}: Delete a product
 
-
 License
 
 ->This application is licensed under the MIT License.
+
+To run the application in container
+
+->Clone the repository or unzip the folder.
+->Build and start the containers(If docker compose is not installed install it ):
+   bash docker-compose up --build
+
+      
+API's documentation availability
+-> /REST API basics- CRUD, test & variable.postman_collection.json

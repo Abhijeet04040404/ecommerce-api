@@ -13,6 +13,11 @@ class Product extends Model
 
     protected $fillable = ['name','description','price','stock','sku'];
 
+    /**
+     * Get all of the images for the Product
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\MorphMany
+     */
     public function images()
     {
         return $this->morphMany(ProductImage::class, 'imageable');

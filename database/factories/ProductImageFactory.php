@@ -13,6 +13,10 @@ class ProductImageFactory extends Factory
     /**
      * Define the model's default state.
      *
+     * This factory generates a sample product image URL using Faker.
+     * The image dimensions are set to 640x480 and themed around 'products'.
+     * Useful for seeding the database with realistic-looking product images during development.
+     *
      * @return array<string, mixed>
      */
     public function definition(): array

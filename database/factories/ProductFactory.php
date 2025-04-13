@@ -11,9 +11,10 @@ use Illuminate\Support\Str;
 class ProductFactory extends Factory
 {
     /**
-     * Define the model's default state.
+     * Define the model's default state with fake data for product attributes.
      *
-     * @return array<string, mixed>
+     * @return array<string, mixed> An array containing fake data for creating a product,
+     *                              including 'name', 'description', 'price', 'stock', and 'sku'.
      */
 
      public function definition(): array
